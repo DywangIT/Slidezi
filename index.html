@@ -2,7 +2,9 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <title>Slidezi.js: A Lightweight Vanilla JavaScript Slide Library</title>
+        <title>
+            Slidezi.js: A Lightweight Vanilla JavaScript Slide Library
+        </title>
         <meta
             name="description"
             content="Slidezi.js is a lightweight and simple slide library written in pure JavaScript. It is designed for great user experience (no dependencies, fully customizable, supports URL state persistence)."
@@ -15,7 +17,11 @@
         />
         <link rel="stylesheet" href="./assets/styles.css" media="all" />
         <link rel="stylesheet" href="./src/slidezi.css" />
-        <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+        <link
+            rel="shortcut icon"
+            href="./assets/favicon.png"
+            type="image/x-icon"
+        />
     </head>
     <body>
         <!-- HEADER -->
@@ -38,10 +44,11 @@
 
         <!-- CONTAINER -->
         <div class="container content">
+            <!-- =================================== 1. Try it out ========================================= -->
             <h2 data-bullet="1" class="title" id="try-it-out">Try It Out</h2>
             <p>
-                Slidezi is a lightweight <strong>slide library</strong> built with
-                pure JavaScript. (<a
+                Slidezi is a lightweight <strong>slide library</strong> built
+                with pure JavaScript. (<a
                     href="https://github.com/DywangIT/slidezi"
                     >Source code available on GitHub</a
                 >)
@@ -57,80 +64,7 @@
 
             <p>Here are some examples of how to use Slidezi:</p>
 
-            <!-- Sample 1 -->
-            <p><strong>1. Basic Slides Demo</strong></p>
-
-            <div class="sample-1">
-                <ul id="fancy-slides" class="slidezi-slides">
-                    <li><a href="#fancy1">Slide 1</a></li>
-                    <li><a href="#fancy2">Slide 2</a></li>
-                    <li><a href="#fancy3">Slide 3</a></li>
-                    <li><a href="#fancy4">Slide 4</a></li>
-                </ul>
-                <div id="fancy1" class="slidezi-panel">
-                    Welcome to Slide 1! This is the first slide.
-                </div>
-                <div id="fancy2" class="slidezi-panel" hidden>
-                    Here’s Slide 2 with some cool content.
-                </div>
-                <div id="fancy3" class="slidezi-panel" hidden>
-                    Slide 3 is here for you to explore.
-                </div>
-                <div id="fancy4" class="slidezi-panel" hidden>
-                    Slide 4 has some unique info.
-                </div>
-            </div>
-
-            <!-- Sample 2 -->
-            <p><strong>2. Persistent Slides Demo</strong></p>
-
-            <div class="sample-2">
-                <ul id="persistent-slides" class="slidezi-slides">
-                    <li><a href="#persist1">News</a></li>
-                    <li><a href="#persist2">Sports</a></li>
-                    <li><a href="#persist3">Tech</a></li>
-                    <li><a href="#persist4">Lifestyle</a></li>
-                </ul>
-                <div id="persist1" class="slidezi-panel">
-                    Latest news updates from around the world.
-                </div>
-                <div id="persist2" class="slidezi-panel" hidden>
-                    Top sports highlights and scores.
-                </div>
-                <div id="persist3" class="slidezi-panel" hidden>
-                    Latest trends in technology.
-                </div>
-                <div id="persist4" class="slidezi-panel" hidden>
-                    Tips for a better lifestyle.
-                </div>
-            </div>
-
-            <!-- Sample 3 -->
-            <p><strong>3. Sliding Line Slides Demo</strong></p>
-
-            <div class="sample-3">
-                <div class="slidezi-wrapper">
-                    <ul id="sliding-slides" class="slidezi-slides sliding">
-                        <li><a href="#slide1">Home</a></li>
-                        <li><a href="#slide2">About</a></li>
-                        <li><a href="#slide3">Services</a></li>
-                        <li><a href="#slide4">Portfolio</a></li>
-                    </ul>
-                    <div class="active-line"></div>
-                </div>
-                <div id="slide1" class="slidezi-panel">
-                    Welcome to the Home slide!
-                </div>
-                <div id="slide2" class="slidezi-panel" hidden>
-                    About us and our mission.
-                </div>
-                <div id="slide3" class="slidezi-panel" hidden>
-                    Our services in detail.
-                </div>
-                <div id="slide4" class="slidezi-panel" hidden>
-                    Check out our portfolio.
-                </div>
-            </div>
+            <!-- =================================== 2.Installation ========================================= -->
 
             <h2 data-bullet="2" class="title" id="installation">
                 Installation
@@ -180,37 +114,36 @@
                 >
                 versions of Slidezi available here.
             </blockquote>
-
+            <!-- =================================== 3.Usage ========================================= -->
             <h2 data-bullet="3" class="title" id="usage">Usage</h2>
-            <p>Here’s the basic HTML structure you’ll need to set up Slidezi:</p>
+            <p>
+                Here’s the basic HTML structure you’ll need to set up Slidezi:
+            </p>
 
-            <pre class="html"><code>&lt;ul id=&quot;my-slides&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;#panel1&quot;&gt;Slide 1&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;#panel2&quot;&gt;Slide 2&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div id=&quot;panel1&quot;&gt;Content 1&lt;/div&gt;
-&lt;div id=&quot;panel2&quot;&gt;Content 2&lt;/div&gt;</code></pre>
+            <pre class="html"><code>&#x3C;div id=&#x22;my-slider&#x22;&#x3E;
+    &#x3C;div&#x3E;Slide 1&#x3C;/div&#x3E;
+    &#x3C;div&#x3E;Slide 2&#x3C;/div&#x3E;
+    &#x3C;div&#x3E;Slide 3&#x3C;/div&#x3E;
+    &#x3C;div&#x3E;Slide 4&#x3C;/div&#x3E;
+    &#x3C;div&#x3E;Slide 5&#x3C;/div&#x3E;
+    &#x3C;div&#x3E;Slide 6&#x3C;/div&#x3E;
+    &#x3C;div&#x3E;Slide 7&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</code></pre>
 
             <p>And here’s how you can use it with JavaScript:</p>
 
-            <pre class="javascript"><code>// Initialize a new slide instance
-const slides = new Slidezi('#my-slides', {
-    activeClassName: 'slidezi--active',
-    remember: true, // Keeps the active slide in the URL
-    onChange: function({ slide, panel }) {
-        console.log(`Switched to ${slide.textContent}`);
-    }
+            <pre
+                class="javascript"
+            ><code>const mySlider = new Slidezi(&#x22;#my-slider&#x22;, {
+    items: 2, // The number of items shown on the screen
+    loop: true, // Enable loop after last item (1 -> 2 -> 3 -> 1)
+    speed: 500, // Transition speed
+    nav: true // Show some dots and active dots below the slide
 });
-
-// Switch to a specific slide
-slides.switch('#panel2');
-
-// Destroy the slide instance
-slides.destroy();
 </code></pre>
-
+            <!-- =================================== 4. Options ========================================= -->
             <h2 data-bullet="4" class="title" id="options">Options</h2>
-            <slidele class="methods">
+            <table class="methods">
                 <thead>
                     <tr>
                         <th>Option</th>
@@ -219,66 +152,39 @@ slides.destroy();
                     </tr>
                 </thead>
                 <tr>
-                    <td>activeClassName</td>
-                    <td>string</td>
+                    <td>items</td>
+                    <td>number</td>
                     <td>
-                        CSS class applied to the active slide (default:
-                        <code>'slidezi--active'</code>)
+                        The number of items shown on the screen (default:
+                        <code>3</code>)
                     </td>
                 </tr>
                 <tr>
-                    <td>remember</td>
+                    <td>loop</td>
                     <td>boolean</td>
                     <td>
-                        Persists the active slide state in the URL (default:
+                        Enable loop after last item (default:
                         <code>false</code>)
                     </td>
                 </tr>
                 <tr>
-                    <td>onChange</td>
-                    <td>function</td>
+                    <td>speed</td>
+                    <td>number</td>
                     <td>
-                        A callback function that runs whenever the active slide
-                        changes. It receives an object with two properties:
-                        <code>slide</code> (the DOM element of the newly active
-                        slide) and <code>panel</code> (the DOM element of the
-                        corresponding content panel). By default, it’s set to
-                        <code>null</code>, meaning no action is taken unless you
-                        define a function.
-                    </td>
-                </tr>
-            </slidele>
-
-            <h2 data-bullet="5" class="title" id="api">API</h2>
-            <slidele class="methods">
-                <thead>
-                    <tr>
-                        <th>Method</th>
-                        <th class="w60">Description</th>
-                    </tr>
-                </thead>
-                <tr>
-                    <td>switch(input)</td>
-                    <td>
-                        Switches to a specific slide based on the provided
-                        <code>input</code>. The <code>input</code> can be
-                        either: (1) a <strong>string</strong> representing the
-                        <code>href</code> attribute of a slide (e.g.,
-                        <code>'#panel2'</code>), or (2) a
-                        <strong>DOM element</strong> that is one of the slide
-                        links (e.g., an <code>&lt;a&gt;</code> element from the
-                        slides list).
+                        Slide transition speed(default:
+                        <code>300ms</code>)
                     </td>
                 </tr>
                 <tr>
-                    <td>destroy()</td>
+                    <td>nav</td>
+                    <td>boolean</td>
                     <td>
-                        Removes all Slidezi functionality, restores the original
-                        HTML, and unbinds events.
+                        Show some dots and active dots below the slide (default:
+                        <code>true</code>)
                     </td>
                 </tr>
-            </slidele>
-
+            </table>
+            <!-- =================================== Footer ========================================= -->
             <footer class="footer">
                 <p>
                     This is a small project created to demonstrate slide
@@ -302,8 +208,6 @@ slides.destroy();
         <script>
             // Highlight code
             hljs.initHighlightingOnLoad();
-
-            
         </script>
     </body>
 </html>
