@@ -18,9 +18,11 @@ function Slidezi(selector, options = {}) {
     this.origLength = this.slides.length;
 
     this._init();
-    setInterval(() => {
-        this._moveSlide(1);
-    }, 3000);
+    if (this.opt.loop) {
+        setInterval(() => {
+            this._moveSlide(1);
+        }, 3000);
+    }
 }
 
 Slidezi.prototype._init = function () {
