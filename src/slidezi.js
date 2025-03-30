@@ -1,6 +1,6 @@
 function Slidezi(selector, options = {}) {
     this.opt = {
-        items: 3,
+        items: 1,
         loop: false,
         speed: 300,
         nav: true,
