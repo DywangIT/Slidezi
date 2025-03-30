@@ -15,8 +15,8 @@
             href="./assets/highlight/styles.css"
             media="all"
         />
-        <link rel="stylesheet" href="./assets/styles.css" media="all" />
         <link rel="stylesheet" href="./src/slidezi.css" />
+        <link rel="stylesheet" href="./assets/styles.css" media="all" />
         <link
             rel="shortcut icon"
             href="./assets/favicon.png"
@@ -62,7 +62,61 @@
                 <li>Lightweight and optimized</li>
             </ul>
 
+            <p>
+                Here is the initial slider with default CSS. This includes 3
+                items: two buttons and slide dots. You can set style for them in
+                your CSS file again. (not including orange border)
+            </p>
+            <div id="slider0" style="border: 1px solid orange">
+                <div>content 1</div>
+                <div>content 2</div>
+                <div>content 3</div>
+                <div>content 4</div>
+                <div>content 5</div>
+                <div>content 6</div>
+                <div>content 7</div>
+            </div>
+
             <p>Here are some examples of how to use Slidezi:</p>
+            <p><strong>1. Basic Slider.</strong></p>
+            <div id="slider1" class="slidezi-box">
+                <div>content 1</div>
+                <div>content 2</div>
+                <div>content 3</div>
+                <div>content 4</div>
+                <div>content 5</div>
+                <div>content 6</div>
+                <div>content 7</div>
+            </div>
+            <p>
+                Basic Slider is symple and static. You have to click the buttons
+                or dots to change the slide.
+            </p>
+            <p><strong>2. Advanced Slider.</strong></p>
+            <div id="slider2" class="slidezi-box">
+                <div>content 1</div>
+                <div>content 2</div>
+                <div>content 3</div>
+                <div>content 4</div>
+                <div>content 5</div>
+                <div>content 6</div>
+                <div>content 7</div>
+            </div>
+            <p>
+                Acvanced Slider has more one item on the screen and
+                automatically transitions to another slide after a certain
+                period of time. (3s and unchangeable)
+            </p>
+            <p><strong>3. Slider without navigation dots.</strong></p>
+            <div id="slider3" class="slidezi-box">
+                <div>content 1</div>
+                <div>content 2</div>
+                <div>content 3</div>
+                <div>content 4</div>
+                <div>content 5</div>
+                <div>content 6</div>
+                <div>content 7</div>
+            </div>
 
             <!-- =================================== 2.Installation ========================================= -->
 
@@ -141,7 +195,10 @@
     nav: true // Show some dots and active dots below the slide
 });
 </code></pre>
-<p><strong>*Note: </strong>you have to set "box-sizing: border-box" css property.</p>
+            <p>
+                <strong>*Note: </strong>you have to set "box-sizing: border-box"
+                css property.
+            </p>
             <!-- =================================== 4. Options ========================================= -->
             <h2 data-bullet="4" class="title" id="options">Options</h2>
             <table class="methods">
@@ -209,6 +266,21 @@
         <script>
             // Highlight code
             hljs.initHighlightingOnLoad();
+
+            // initial
+            new Slidezi("#slider0");
+
+            // Examples
+            new Slidezi("#slider1", {
+                items: 1
+            });
+            new Slidezi("#slider2", {
+                items: 2,
+                loop: true
+            });
+            new Slidezi("#slider3", {
+                nav: false
+            });
         </script>
     </body>
 </html>

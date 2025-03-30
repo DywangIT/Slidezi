@@ -76,7 +76,7 @@ Slidezi.prototype._createNavBtns = function () {
     ["<", ">"].forEach((txt, i) => {
         const btn = document.createElement("button"); // create
         (btn.textContent = txt),
-            (btn.className = `slidezi-${i ? "next" : "prev"}`);
+            btn.classList.add(`slidezi-${i ? "next" : "prev"}`);
         btn.onclick = () => this._moveSlide(i ? 1 : -1);
         this.content.appendChild(btn);
     });
