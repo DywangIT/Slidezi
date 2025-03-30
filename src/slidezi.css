@@ -1,0 +1,63 @@
+.slidezi-wrapper {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slidezi-content {
+    width: 100%;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.slidezi-track {
+    display: flex;
+}
+
+.slidezi-slide {
+    flex: 0 0;
+}
+
+.slidezi-prev,
+.slidezi-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    background: #ccc;
+    /* remove default */
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.slidezi-prev {
+    left: 10px;
+}
+
+.slidezi-next {
+    right: 10px;
+}
+
+.slidezi-dots {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+    width: fit-content;
+}
+
+.slidezi-dot {
+    width: 20px;
+    height: 7px;
+    border-radius: 9999px;
+    border: none;
+    outline: none;
+    background: #ccc;
+    cursor: pointer;
+}
+
+.slidezi-dot.active {
+    background: #000;
+}
